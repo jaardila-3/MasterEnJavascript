@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM exercise, events and functions</title>
+    <script src="formulario.js"></script>
+    <style>
+        .box {
+            width: 200px;
+            height: 250px;
+            float: left;
+            margin: 20px;
+        }
+
+        .dashed {
+            border: 3px dashed black;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        1. formulario campos: Nombre, Apellido y edad
+        2. boton de enviar el formulario: evento submit
+        3. mostar datos por pantalla
+        4. validacion del formulario
+    -->
+
+    <h1>DOM exercise, events and functions</h1>
+
+    <div class="box">
+        <form action="" method="post" id="formulario" onsubmit="return false;">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" name="nombre" id="nombre"><br>
+
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" name="apellido" id="apellido"><br>
+
+            <label for="edad">Edad:</label><br>
+            <input type="number" name="edad" id="edad"><br>
+
+            <input type="submit" value="Enviar" id="submit">
+
+        </form>
+    </div>
+
+    <div class="box dashed">
+        <h3>Información del usuario</h3>
+        <hr>
+        <!--parrafos para el dashed-->
+        <p id="pNombre">
+            Nombre: <span style="color: red;"></span>
+        </p>
+
+        <p id="pApellido">
+            Apellidos: <span style="color: rgb(0, 174, 255);"></span>
+        </p>
+
+        <p id="pEdad">
+            Edad: <span style="color: rgba(0, 255, 42, 0.815);"></span>
+        </p>
+
+    </div>
+
+</body>
+
+</html>

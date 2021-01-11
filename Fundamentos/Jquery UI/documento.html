@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../Jquery/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../Jquery/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="../../Jquery/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+
+    <style>
+        .lista li {
+            width: 80%;
+            padding: 20px;
+            border: 1px solid #cccccc;
+            list-style: none;
+            /*son los puntitos del <li>*/
+            cursor: pointer;
+        }
+
+        ul .ui-selecting {
+            background: green;
+        }
+
+        ul .ui-selected {
+            background: blue;
+        }
+
+        .elemento {
+            width: 300px;
+            height: 200px;
+            border: 4px solid black;
+            background: lightblue;
+            margin: 20px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>JQuery UI</h1>
+
+    <hr>
+    <h3>Pestañas</h3>
+    <div id="pestana">
+        <ul>
+            <li><a href="#tabs-1">Pestaña 1</a></li>
+            <li><a href="#tabs-2">Pestaña 2</a></li>
+            <li><a href="#tabs-3">Pestaña 3</a></li>
+            <li><a href="#tabs-4">Pestaña 4</a></li>
+        </ul>
+        <div id="tabs-1">
+            soy la pestaña uno
+        </div>
+        <div id="tabs-2">
+            soy la pestaña dos
+            <button>HOLA</button>
+        </div>
+        <div id="tabs-3">
+            soy la pestaña tres
+            <a href="www.google.com">Google</a>
+        </div>
+        <div id="tabs-4">
+            soy la pestaña cuatro
+            <br>
+            <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/04/08/15863374252712.jpg" alt="">
+        </div>
+    </div>
+    <hr>
+    <h3>Calendario</h3>
+    <input type="text" id="calendario">
+    <hr>
+    <h3>Cuadro de diálogo</h3>
+    <button id="aceptar">Continue</button>
+    <div id="popup" title="¿Estas seguro?" style="display: none;">
+        <p>continuar con el curso</p>
+    </div>
+    <hr>
+    <h3 title="muestra lo que hay en el título">Tooltip</h3>
+    <hr>
+    <h3>Sortable, draggable y otros</h3>
+    <ul class="lista">
+        <li>GTA 5</li>
+        <li>Need For Speed</li>
+        <li>Super Mario</li>
+        <li>FIFA 21</li>
+    </ul>
+
+    <div class="elemento">Hola, soy un elemento</div>
+    <div class="elemento">Hola, soy un elemento</div>
+    <div class="elemento">Hola, soy un elemento</div>
+
+    <script src="../../Jquery/jquery-3.5.1.min.js"></script>
+    <script src="interface.js"></script>
+    <script src="../../Jquery/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+</body>
+
+</html>

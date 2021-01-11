@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax y Fetch</title>
+</head>
+
+<body>
+
+    <H1 style="text-align: center;">PETICIONES AJAX</H1>
+    <form action="javascript:void(0)" name="usuarioAjax" style="padding: 30px;">
+        <input id="Nombre1A" type="text" placeholder="Nombre completo"  autofocus>
+        <input id="correo1A" type="email" placeholder="Correo Electronico" >
+        <button type="submit" id="botonA1">POST</button>
+        <button type="submit" id="botonA2">GET</button>
+        <button type="submit" id="botonA3">PUT</button>
+        <button type="submit" id="botonA4">DELETE</button>
+        <input type="text" placeholder="id para el GET"  id="idAG" style="margin-left: 300px;"> 
+    </form>
+<hr>
+<form action="javascript:void(0)" name="usuarioAjax" style="padding: 30px;">
+    <input id="idA" type="text" placeholder="id"   >  
+    <input id="Nombre2A" type="text" placeholder="Nombre  completo" id="nombreA">      
+    <input class="correo2A" type="email" placeholder="Correo Electronico" id="emailA">    
+</form>
+    <hr style="margin: 30px;">
+
+    <H1 style="text-align: center;" >PETICIONES FETCH</H1>
+    <form action="javascript:void(0)" name="usuarioFetch" style="padding: 30px;">
+        <input id="Nombre1F" type="text" placeholder="Nombre completo"  >
+        <input id="correo1F" type="email" placeholder="Correo Electronico" >
+        <button type="submit" id="botonP1">POST</button>
+        <button type="submit" id="botonP2">GET</button>
+        <button type="submit" id="botonP3">PUT</button>
+        <button type="submit" id="botonP4">DELETE</button>
+        <input type="text" placeholder="id para el GET"  id="idFG" style="margin-left: 300px;">
+        
+    </form>
+    <hr>
+    <form action="javascript:void(0)" name="usuarioFetch" style="padding: 30px;">
+        <input id="idF" type="text" placeholder="id"   >  
+        <input  id="Nombre2F" type="text" placeholder="Nombre completo" >      
+        <input id="correo2F" type="email" placeholder="Correo Electronico" >    
+    </form>
+
+    <script src="ajax.js"></script>
+    <script src="fetch.js"></script>
+</body>
+
+</html>
